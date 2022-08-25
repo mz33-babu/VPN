@@ -18,7 +18,8 @@ The cheapest option (5$) with Ubuntu 18.04 will suffice.
 
 Don’t forget to add your ssh key to make possible further operations with the droplet via ssh: https://www.digitalocean.com/docs/droplets/how-to/add-ssh-keys/
 #### Adding `ssh` Keys
-  i)  On your local machine(Linux), run `ssh-keygen`
+On your local machine(Linux), run `ssh-keygen`
+
 The utility prompts you to select a location for the keys. By default, the keys are stored in the `~/.ssh` directory with the filenames `id_rsa` for the private key and `id_rsa.pub` for the public key. Using the default locations allows your `SSH` client to automatically find your `SSH` keys when authenticating, so we recommend accepting them by pressing `ENTER`.
 
 Once you select a location for the key, you’ll be prompted to enter an optional passphrase which encrypts the private key file on disk.
@@ -33,7 +34,7 @@ After you create an SSH key pair, you can upload your public key to DigitalOcean
 
 To create all configs and set up the WireGuard server automatically you have to use wg-ubuntu-server-up.sh script that:
 ```
-    Installs all necessary software
+    Install all necessary software
     Configures IPv4 forwarding and iptables rules
     Sets up unbound dns resolver
     Creates a server and clients configurations
@@ -44,7 +45,7 @@ Establish a connection to the droplet via ssh and execute the following commands
 `ssh root@xxx.xxx.x.xxwget https://raw.githubusercontent.com/drew2a/wireguard/master/wg-ubuntu-server-up.sh`
 ```
     chmod +x ./wg-ubuntu-server-up.sh
-    sudo ./wg-ubuntu-server-up.sh`
+    sudo ./wg-ubuntu-server-up.sh
 ```
 After the commands are executed, the WireGuard server will starts.
 
