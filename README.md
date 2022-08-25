@@ -27,7 +27,7 @@ If you enter one, you will have to provide it every time you use this key (unles
 This is the last step in the creation process. You now have a public and private key that you can use to authenticate.
 
 After you create an SSH key pair, you can upload your public key to DigitalOcean teams to make it easier to add your keys to your Droplets. It’s safe to freely share your SSH public key because it cannot be used to re-create the private key. It can only be used to validate the user who holds the associated private key.
-https://docs.digitalocean.com/screenshots/droplets/ssh-account-key-add-button.d29d72d745a6ce659860be22b10934e8774a62048f48ad22d95e4a770211ae26.png
+
 ### *Step 2:*
 **Set up a server and prepare all the necessary configs**
 
