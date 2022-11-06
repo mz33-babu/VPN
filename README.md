@@ -90,7 +90,7 @@ Install wireguard: `sudo apt install wireguard`
 Copy the downloaded config, `client2.conf` file to ` /etc/wireguard/` and rename it to `wg0`
 ```
 cp client2.conf /etc/wireguard/
-mv client2.conf wg0
+mv client2.conf wg0.conf
 ```
 Run `wg-quick up wg0` to bring up the wireguard interface.
 
